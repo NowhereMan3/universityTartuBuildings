@@ -15,11 +15,25 @@
             width: 1206px;
             height: 607px;
         }
+  #map-title {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid #ccc;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            z-index: 1000;
+            pointer-events: none;
+        }
         </style>
         <title></title>
     </head>
     <body>
-        <div id="map">
+        <div id="map"><div id="map-title">University of Tartu Buildings Map</div>
         </div>
         <script src="js/qgis2web_expressions.js"></script>
         <script src="js/leaflet.js"></script>
